@@ -14,7 +14,6 @@ import * as modCarouselItem from '../../src/CarouselItem';
 import * as modCol from '../../src/Col';
 import * as modDropdownButton from '../../src/DropdownButton';
 import * as modDropdownButtonRevisited from '../../src/revisited/DropdownButton';
-import * as modFormControls from '../../src/FormControls';
 import * as modGlyphicon from '../../src/Glyphicon';
 import * as modGrid from '../../src/Grid';
 import * as modInput from '../../src/Input';
@@ -49,6 +48,9 @@ import * as modThumbnail from '../../src/Thumbnail';
 import * as modTooltip from '../../src/Tooltip';
 import * as modWell from '../../src/Well';
 
+import * as modFormControls from '../../src/FormControls';
+import * as modStatic from '../../src/FormControls/Static';
+
 import babel from 'babel-core/browser';
 
 import CodeExample from './CodeExample';
@@ -70,7 +72,6 @@ const CarouselItem = modCarouselItem.default;
 const Col = modCol.default;
 const DropdownButton = modDropdownButton.default;
 const DropdownButtonRevisited = modDropdownButtonRevisited.default;
-const FormControls = modFormControls.default;
 const Glyphicon = modGlyphicon.default;
 const Grid = modGrid.default;
 const Input = modInput.default;
@@ -104,6 +105,9 @@ const TabPane = modTabPane.default;
 const Thumbnail = modThumbnail.default;
 const Tooltip = modTooltip.default;
 const Well = modWell.default;
+
+const FormControls = modFormControls;
+const Static = modStatic.default;
 /* eslint-enable */
 
 const IS_MOBILE = typeof navigator !== 'undefined' && (
