@@ -1,17 +1,12 @@
 import _ from 'lodash';
-import baseConfig, { jsLoader } from './base.config';
+import { jsLoader } from './base.config';
+import testConfig from './test.config';
 
-export default _.extend({}, baseConfig, {
-  output: {
-    pathinfo: true
-  },
-
+export default _.extend({}, testConfig, {
   module: {
     loaders: [
       { test: /\.js/, loader: `${jsLoader}!isparta`, exclude: /node_modules|test[\/\\]/ },
       { test: /\.js/, loader: `${jsLoader}`, include: /test[\/\\]/ }
     ]
-  },
-
-  devtool: 'eval'
+  }
 });
