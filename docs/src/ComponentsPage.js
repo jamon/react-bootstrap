@@ -175,7 +175,7 @@ const ComponentsPage = React.createClass({
 
                 {/* Menu Item */}
                 <div className='bs-docs-section'>
-                  <h1 id='menu-item' className='page-header'>Menu Item <small> MenudItem</small></h1>
+                  <h1 id='menu-item' className='page-header'>Menu Item <small> MenuItem</small></h1>
                   <p>This is a component used in other components (see <a href="buttons">Buttons</a>, <a href="#navbars">Navbars</a>).</p>
                   <p>It supports the basic anchor properties <code>href</code>, <code>target</code>, <code>title</code>.</p>
                   <p>It also supports different properties of the normal Bootstrap MenuItem.
